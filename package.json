@@ -1,0 +1,28 @@
+{
+  "name": "atomic-visualizer",
+  "version": "0.5.7",
+  "description": "A simple atomic structure visualizer",
+  "keywords": [
+    "chemistry",
+    "physical-chemistry",
+    "threejs"
+  ],
+  "license": "MIT",
+  "author": "Ayush Muley",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "tailwindcss": "^4.1.18",
+    "three": "^0.182.0"
+  },
+  "devDependencies": {
+    "vite": "^7.2.7"
+  }
+}

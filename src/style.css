@@ -238,3 +238,10 @@ input[type="range"]::-moz-range-track {
 input[type="range"]:focus {
   outline: none;
 }
+
+/* Hide on mobile screens */
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+/* Periodic Table Grid Layout */
+.pt-grid {
+  display: grid;
+  grid-template-columns: repeat(18, minmax(36px, 1fr));
+  gap: 4px;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.pt-cell {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.pt-cell:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pt-cell.empty {
+  background: transparent;
+  pointer-events: none;
+  border: none;
+}
+
+.pt-cell.active {
+  border: 2px solid #3b82f6;
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.pt-number {
+  font-size: 0.55rem;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  opacity: 0.7;
+}
+
+.pt-symbol {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Category Colors */
+.cat-alkali { background-color: #fca5a5; color: #7f1d1d; }
+.cat-alkaline { background-color: #fdba74; color: #7c2d12; }
+.cat-transition { background-color: #fcd34d; color: #713f12; }
+.cat-post-transition { background-color: #bef264; color: #365314; }
+.cat-metalloid { background-color: #6ee7b7; color: #064e3b; }
+.cat-nonmetal { background-color: #7dd3fc; color: #0c4a6e; }
+.cat-noble { background-color: #a5b4fc; color: #312e81; }
+.cat-lanthanide { background-color: #c4b5fd; color: #4c1d95; }
+.cat-actinide { background-color: #f9a8d4; color: #831843; }
+.cat-unknown { background-color: #cbd5e1; color: #334155; }
